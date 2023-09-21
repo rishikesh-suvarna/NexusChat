@@ -6,6 +6,9 @@ import { CreateServerModal } from "@/components/modals/create-server-modal"
 import { InviteModal } from "@/components/modals/invite-modal"
 import { EditServerModal } from "@/components/modals/edit-server"
 import { MembersModal } from "@/components/modals/members-modal"
+import { CreateChannelModal } from "@/components/modals/create-channel-modal"
+import { LeaveServerModal } from "@/components/modals/leave-server-modal"
+import { DeleteServerModal } from "@/components/modals/delete-server-modal"
 
 export const ModalProvoider = () => {
 
@@ -21,6 +24,9 @@ export const ModalProvoider = () => {
             <InviteModal />   
             <EditServerModal />
             <MembersModal />
+            <CreateChannelModal />
+            <LeaveServerModal />
+            <DeleteServerModal />
         </>
     )
 }
