@@ -51,7 +51,7 @@ export async function POST(
         return NextResponse.json(server)
 
     } catch (error) {
-        console.log("CHANNEL_CREATE_ERROR: "+error)
+        console.log("[CHANNEL_CREATE_ERROR]: "+error)
         return new NextResponse('Internal server error', { status: 500 })
     }
 }
