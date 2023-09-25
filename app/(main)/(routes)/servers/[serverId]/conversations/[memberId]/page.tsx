@@ -39,8 +39,6 @@ const MemberIdPage = async ({
 
   const conversation = await getOrCreateConversation(currentMember.id, params.memberId)
 
-  console.log(conversation)
-
   if(!conversation) {
     return redirect(`/servers/${params.serverid}`)
   }
