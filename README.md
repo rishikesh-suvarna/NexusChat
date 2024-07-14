@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NexusChat
+
+Nexus is a communication platform built on Next.js and powered by Prisma ORM. It offers a seamless user experience similar to Discord, allowing users to engage in text-based, real-time audio/video conversations.
+
+## Features
+
+- Real-time text-based communication
+- Audio and video calls
+- User authentication via Clerk
+- Securely hosted on PlanetScale
+
+## Technologies Used
+
+- Next.js
+- Prisma ORM
+- Clerk for user authentication
+- PlanetScale for DB secure hosting
 
 ## Getting Started
 
-First, run the development server:
+To get started with Nexus, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+1. Clone the repository: `git clone https://github.com/rishikesh-suvarna/NexusChat.git`
+2. Install dependencies: `npm install`
+3. Set up the database connection in the `.env` file.
+4. Run the application: `npm run dev`
+
+## Environment Variables Setup
+
+To configure the environment variables for Nexus, you can use the `.env.example` file located in the root folder of the application. Follow these steps:
+
+1. Copy the `.env.example` file and rename it to `.env`.
+2. Open the `.env` file and update the values of the environment variables according to your setup.
+
+Here is an example of the `.env` file:
+
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+
+DATABASE_URL=
+
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
+
+LIVEKIT_API_KEY=
+LIVEKIT_API_SECRET=
+NEXT_PUBLIC_LIVEKIT_URL=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once you have updated the `.env` file, you can proceed with the remaining steps mentioned in the README.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contributions are welcome! If you'd like to contribute to Nexus, please follow these guidelines:
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Open a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [MIT License](LICENSE).
